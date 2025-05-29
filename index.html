@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+    }
+    header .logo {
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #000;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text h2 {
+      margin-top: 0;
+    }
+    .hero img {
+      max-width: 600px;
+      height: auto;
+    }
+    .about {
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .about h2 {
+      margin-bottom: 5px;
+    }
+    .about .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .about .grid div {
+      flex: 1 0 300px;
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    .portfolio {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .portfolio h2 {
+      margin-bottom: 30px;
+    }
+    .portfolio .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-card {
+      width: 350px;
+      border: 1px solid #ccc;
+      background-color: #eee;
+      padding: 10px;
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-card h3 {
+      margin: 10px 0 5px;
+    }
+    .project-card p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Brand</div>
+    <nav>
+      <a href="#">Header</a>
+      <a href="#">Biodata</a>
+      <a href="#">Portofolio</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Selamat Datang di Website Saya</h2>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <a href="#">Pelajari Lebih Lanjut</a>
+    </div>
+    <img src="https://via.placeholder.com/600x400" alt="Hero Image">
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>A brief introduction about myself</p>
+    <div class="grid">
+      <div>Full Name</div>
+      <div>Education</div>
+      <div>Pekerjaan</div>
+      <div>Contact</div>
+      <div>Hobi</div>
+      <div>Alamat</div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portofolio</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 1">
+        <h3>Proyek 1</h3>
+        <p>Deskripsi proyek 1.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 2">
+        <h3>Proyek 2</h3>
+        <p>Deskripsi proyek 2.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" alt="Proyek 3">
+        <h3>Proyek 3</h3>
+        <p>Deskripsi proyek 3.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+    
