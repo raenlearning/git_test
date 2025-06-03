@@ -1,69 +1,132 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Saya</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page | Portofolio</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-  <header>
-    <div class="logo">Brand</div>
-    <nav>
-      <a href="#">Header</a>
-      <a href="#">Biodata</a>
-      <a href="#">Portofolio</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">RADEC<span class="text-warning">WEB</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-warning text-white">Download CV</a>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Selamat Datang di Website Saya</h2>
-      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-      <button>Pelajari lebih lanjut</button>
-    </div>
-    <img src="./assets/profile_picture.jpg" alt="Hero Image">
-  </section>
+    <!-- Hero -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>Hi I am <span class="text-warning fw-bold">Radec Nababan</span></h5>
+                    <h1 class="display-4 fw-bold">Web <br>
+                        <div class="ms-5"> Developer </div>
+                    </h1>
+                    <p class="lead" style="max-width: 500px;">
+                        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
+                    </p>
+                    <a href="#" class="btn btn-warning text-white">Hire Me</a>
+                </div>
+                <!-- Image Column -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/profile_picture.jpg" alt="Fawzi" class="img-fluid" width="500" />
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>A brief introduction about myself</p>
-    <div class="grid">
-      <div>
-        <p> </p>: Josep
-      </div>
-      <div>Education : S1 Teknik</div>
-      <div>Pekerjaan : Mahasiswa</div>
-      <div>Contact : 0812339239</div>
-      <div>Hobi : Membaca</div>
-      <div>Alamat : Jln. Ibran</div>
-    </div>
-  </section>
+    <!-- About Me -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold">About Me</h2>
+            <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-4 col-6 p-3">
+                    <img src="assets/vector/profile-round-1342-svgrepo-com.svg" class="img-fluid m-3" alt="profile"
+                        width="50">
+                    <strong>Full Name</strong>
+                </div>
+                <div class="col-md-4 col-6 p-3">
+                    <img src="assets/vector/education-cap-svgrepo-com.svg" class="img-fluid m-3" alt="profile"
+                        width="50">
+                    <strong>Education</strong> <br>
+                </div>
+                <div class="col-md-4 col-6 p-3">
+                    <img src="assets/vector/work-case-filled-svgrepo-com.svg" class="img-fluid m-3" alt="profile"
+                        width="50">
+                    <strong>Work</strong> <br>
+                </div>
+                <div class="col-md-4 col-6 p-3">
+                    <img src="assets/vector/contact-book-svgrepo-com.svg" class="img-fluid m-3" alt="profile"
+                        width="50">
+                    <strong>Contact</strong> <br>
+                </div>
+                <div class="col-md-4 col-6 p-3">
+                    <img src="assets/vector/favorite-chart-svgrepo-com.svg" class="img-fluid m-3" alt="profile"
+                        width="50">
+                    <strong>Hobby</strong> <br>
+                </div>
+                <div class="col-md-4 col-6 p-3">
+                    <img src="assets/vector/address-svgrepo-com.svg" class="img-fluid m-3" alt="profile" width="50">
+                    <strong>Address</strong> <br>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="portfolio">
-    <h2>Portofolio</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="https://picsum.photos/200/300" alt="Proyek 1">
-        <h3>Proyek 1</h3>
-        <p>Deskripsi proyek 1.</p>
-      </div>
-      <div class="project-card">
-        <img src="https://picsum.photos/200/300" alt="Proyek 2">
-        <h3>Proyek 2</h3>
-        <p>Deskripsi proyek 2.</p>
-      </div>
-      <div class="project-card">
-        <img src="https://picsum.photos/200/300" alt="Proyek 3">
-        <h3>Proyek 3</h3>
-        <p>Deskripsi proyek 3.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Projects -->
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold">My Projects</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. Mattis netus odio egestas mus et.
+            </p>
+            <div class="mb-4">
+                <span class="badge bg-secondary">All</span>
+                <span class="badge bg-warning text-dark">UI/UX</span>
+                <span class="badge bg-light text-dark">Web Design</span>
+                <span class="badge bg-info text-dark">App Design</span>
+                span class="badge bg-dark text-white">Graphic Design</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="assets/images/agency-landing-page-design.jpg" alt="Project 1" class="rounded shadow-sm" width="300" height="280" />
+                    <p class="mt-2">AirClaning Landing Page Design</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/business.png" alt="Project 2" class="rounded shadow-sm" width="300" height="280"/>
+                    <p class="mt-2">Business Landing Page Design</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/e-commerce.jpeg" alt="Project 3" class="rounded shadow-sm" width="300" height="280"/>
+                    <p class="mt-2">Ecom Web Page Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
