@@ -109,23 +109,64 @@
                 <span class="badge bg-info text-dark">App Design</span>
                 span class="badge bg-dark text-white">Graphic Design</span>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <img src="assets/images/agency-landing-page-design.jpg" alt="Project 1" class="rounded shadow-sm" width="300" height="280" />
-                    <p class="mt-2">AirClaning Landing Page Design</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/images/business.png" alt="Project 2" class="rounded shadow-sm" width="300" height="280"/>
-                    <p class="mt-2">Business Landing Page Design</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/images/e-commerce.jpeg" alt="Project 3" class="rounded shadow-sm" width="300" height="280"/>
-                    <p class="mt-2">Ecom Web Page Design</p>
-                </div>
+            <div class="row-md-4">
+                <img src="assets/images/agency-landing-page-design.jpg" alt="Project 1"
+                    class="rounded shadow-sm project-img img-hover" width="300" height="280" data-bs-toggle="modal"
+                    data-bs-target="#projectModal" onclick="setCarouselSlide(0)" />
+                <p class="mt-2">AirClaning Landing Page Design</p>
             </div>
+            <div class="row-md-4">
+                <img src="assets/images/business.png" alt="Project 2" class="rounded shadow-sm project-img img-hover"
+                    width="300" height="280" data-bs-toggle="modal" data-bs-target="#projectModal"
+                    onclick="setCarouselSlide(1)" />
+                <p class="mt-2">Business Landing Page Design</p>
+            </div>
+            <div class="row-md-4">
+                <img src="assets/images/e-commerce.jpeg" alt="Project 3" class="rounded shadow-sm project-img img-hover"
+                    width="300" height="280" data-bs-toggle="modal" data-bs-target="#projectModal"
+                    onclick="setCarouselSlide(2)" />
+                <p class="mt-2">Ecom Web Page Design</p>
+            </div>
+
         </div>
     </section>
 
+    <!-- Modal Carousel -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/agency-landing-page-design.jpg" class="d-block w-100"
+                                    alt="Project 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/business.png" class="d-block w-100" alt="Project 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/e-commerce.jpeg" class="d-block w-100" alt="Project 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
